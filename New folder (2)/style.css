@@ -1,0 +1,44 @@
+nav{
+    box-shadow: 0 0 10px -5px black;
+}
+ul{
+   list-style-type: none; 
+}
+
+ul li{
+    display: inline;
+    position: relative;
+}
+ 
+ul li a{
+    color: rgb(219, 37, 37);
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+ul li:hover>a{
+    background:rgb(76, 0, 255);
+    color: rgb(0, 0, 0);
+}
+ul li ul{
+    background: rgb(138, 235, 135);
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+ul li:hover> ul{
+    display: block;
+}
+ul li ul li{
+    display: block;
+}
+ul li ul li ul{
+    top: 0;
+    left: 100%;
+}
